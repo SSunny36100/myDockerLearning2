@@ -1,0 +1,29 @@
+version: '3.5' 
+
+services:
+    db:
+        image: postgres:13.2-alpine        
+        restart: unless-stopped
+        environment:
+            - POSTGRES_PASSWORD=example
+        container_name: db_redmine
+        volumes:
+            - database:/var/lib/postgresql/data
+            
+    redmine:
+        image: redmine:4.1-alpine
+        environment:
+            - REDMINE_DB_POSTGRES=db
+            - REDMINE_DB_PASSWORD=example
+        depends_on:
+            - db
+        ports:
+            - 9999:3000
+        volumes:
+            - files:/usr/src/redmine/files
+            
+        
+            
+volumes:
+    database:
+    files:
