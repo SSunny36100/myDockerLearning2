@@ -60,7 +60,5 @@ services:
             - POSTGRES_PASSWORD=password
             - POSTGRES_USER=user       
         volumes:
-            - db-postgres-volume:/var/lib/postgresql/data
-            
-volumes:
-    db-postgres-volume: 
+            - ./database:/var/lib/postgresql/data
+           
