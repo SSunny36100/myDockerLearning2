@@ -1,0 +1,9 @@
+version: '3'
+
+services: 
+    youtube-dl-ubuntu2:
+        #image: lilililim/pf-youtube-dl
+        build: .
+        volumes: 
+            - .:/usr/videos
+        container_name: youtube-dl-2
