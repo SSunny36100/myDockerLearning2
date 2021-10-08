@@ -1,10 +1,10 @@
 version: "3"
 services:
-    coursematerial:
-        image: devopsdockeruh/coursepage
+    pipeline-test:
+        image: lilililim/pipeline-test
         ports:
         - 4000:80
-        container_name: coursematerial
+        container_name: pipeline-test
     watchtower:
         image: containrrr/watchtower
         environment:

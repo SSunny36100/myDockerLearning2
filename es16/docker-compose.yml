@@ -1,0 +1,8 @@
+version: '3.5'
+
+services:
+    todo:
+        image: lilililim/pf-todo
+        ports:
+            - 8000:8000
+        container_name: containerized-todo

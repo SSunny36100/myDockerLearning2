@@ -1,0 +1,15 @@
+{
+  "name": "todos",
+  "version": "1.0.0",
+  "description": "Things to do ",
+  "main": "index.js",
+  "author": "Federico Casadei",
+  "license": "MIT",
+  "scripts": {
+    "dev": "ws"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "local-web-server": "^5.1.1"
+  }
+}

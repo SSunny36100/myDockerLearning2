@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best todo app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section id="todo-main-wrapper">
+        <div id="todo-edit-bg">
+            <div id="todo-edit">
+                <h2 class="todo-title">Edit ToDo</h2>
+                <textarea id="todo-edit-input" rows="2"></textarea>
+                <button id="todo-edit-cancel">Cancel</button>
+                <button id="todo-edit-confirm">Edit</button>
+
+            </div>
+        </div>
+        <h1>
+            Fancy Todo List
+        </h1>
+
+        <section id="todo-display">
+            <div id="todo-sections">
+                <button id="show-all" data-show="all">All</button>
+                <button id="show-active" data-show="active">Active</button>
+                <button id="show-done" data-show="done">Done</button>
+                <button id="show-undone" data-show="undone">Undone</button>
+                <button id="show-deleted" data-show="deleted">Deleted</button>
+            </div>
+            <div id="todo-display-todos" data-showing="active">
+
+            </div>
+
+
+        </section>
+        <div class="todo-opt">
+            <span>
+                <button id="todo-display-new">-</button>
+            </span>
+            <span class="select-all">                
+                    <input id="check-all" type="checkbox" class="check-select-all">
+                    <label for="check-all">Select all</label>                
+            </span>
+        </div>
+
+        <section id="todo-add">
+            <div>
+                <label for="todo-add-input-text">What do you have to do?</label><br />
+                <textarea id="todo-add-input-text" rows="2"></textarea>
+
+                <button id="todo-add-add">Add</button>
+            </div>
+        </section>
+    </section>
+
+    <script src="index.js" type="module"></script>
+</body>
+
+</html>
